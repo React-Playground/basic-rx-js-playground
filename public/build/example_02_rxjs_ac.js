@@ -30334,10 +30334,8 @@ _Rx2.default.Observable.fromEvent($title, 'keyup').map(function (e) {
 });
 
 ////Helper
-//
 function getItems(title) {
   console.log("Quering " + title);
-
   return new Promise(function (resolve, reject) {
     window.setTimeout(function () {
       resolve([title, 'Item 2', "Another item " + Math.random()]);
