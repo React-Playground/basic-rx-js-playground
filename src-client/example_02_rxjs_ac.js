@@ -17,10 +17,8 @@ Rx.Observable.fromEvent($title, 'keyup')
 
 
 ////Helper
-//
 function getItems(title) {
   console.log(`Quering ${title}`);
-
   return new Promise((resolve, reject)  => {
     window.setTimeout(() => {
       resolve([title, 'Item 2', `Another item ${Math.random()}`]);
